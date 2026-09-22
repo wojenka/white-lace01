@@ -139,10 +139,9 @@ box-shadow: inset 13px 0px 6px -10px rgb(66 66 66 / 20%), inset -13px 0px 6px -1
     display: grid;
     grid-template-columns: 200px 1fr 180px;
     align-items: stretch;
-    height: 520px;
     border: 1px solid var(--box-border);
     border-radius: 5px;
-    min-height: 70vh;;
+    min-height: 60vh;;
     overflow: hidden;
 }
 
