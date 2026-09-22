@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Name</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @view-transition {
+      navigation: auto;
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body>
+  <div class="page-wrap pets">
+    <div class="site-frame">
+
+      <!-- TOP NAV -->
+      <nav class="top-nav">
+        <a href="index.html" class="nav-btn "><span class="nav-icon">⚜</span> HOME</a>
+        <a href="example-pets.html" class="nav-btn active"><span class="nav-icon">⚜</span> PAGE EXAMPLE (PETS)</a>
+        <a href="" class="nav-btn"><span class="nav-icon">⚜</span> LINK</a>
+        <a href="credits.html" class="nav-btn"><span class="nav-icon">⚜</span> CREDITS</a>
+      </nav>
+
+      <div class="ornament-line"></div>
+
+      <!-- MAIN CONTENT -->
+      <div class="pets-main">
+        <main class="col-center">
+          <article class="box post-box">
+            <h2 class="box-title">GIFY.PET</h2>
+            <div class="post-body">
+              <div class="post-with-img">
+                <div class="post-text">
+                  <p style="text-align: center; opacity: 0.7;">
+                    <iframe frameborder="0" height="321" scrolling="no" src="https://gify.pet/pet/pet.html?name=Apples&amp;dob=1789245959&amp;gender=m&amp;element=Earth&amp;pet=dog.gif&amp;map=forest.jpg&amp;background=1995.png&amp;tablecolor=black&amp;textcolor=black" width="314"></iframe>
+                    <iframe frameborder="0" height="321" scrolling="no" src="https://gify.pet/pet/pet.html?name=Abrams&amp;dob=1789311291&amp;gender=f&amp;element=Fire&amp;pet=https%3A%2F%2Fmedia0.giphy.com%2Fmedia%2FyQrhlHMJ5WXaIieBUg%2Fgiphy.gif&amp;map=https%3A%2F%2Ffile.garden%2FaqV4LX6geJZCqMJ_%2F%257B1EB4F1D4-C5EE-4315-AF71-DF57FE46E395%257D.png&amp;background=https%3A%2F%2Fwww.designersguild.com%2Fimage-nonwebp%2F488%2F32879&amp;tablecolor=%23425248&amp;textcolor=black" width="314"></iframe>
+                  </p>
+                </div>
+            </div>
+            <footer class="post-footer">
+              <span>⊹ ࣪ ˖</span>
+              <span class="post-tag">01</span>
+            </footer>
+          </article>
+          <article class="box post-box">
+            <h2 class="box-title">TAMANOTCHI</h2>
+            <div class="post-body">
+              <div class="post-with-img">
+                <div class="post-text">
+                  <p style="text-align: center;">
+                    <p style="text-align: center; filter: grayscale(1); opacity: 0.7;">
+                      <a href="https://tamanotchi.world/38334c"><img alt="It's tamaNOTchi! Click to feed!" src="https://tamanotchi.world/i2/38334" /></a> 
+                      <a href="https://tamanotchi.world/38335c"><img alt="It's tamaNOTchi! Click to feed!" src="https://tamanotchi.world/i2/38335" /></a>
+                      <a href="https://tamanotchi.world/38342c"><img alt="It's tamaNOTchi! Click to feed!" src="https://tamanotchi.world/i2/38342" /></a></p>
+                  </p>
+                </div>
+            </div>
+            <footer class="post-footer">
+              <span>⊹ ࣪ ˖</span>
+              <span class="post-tag">02</span>
+            </footer>
+          </article>
+                    <article class="box post-box">
+            <h2 class="box-title">CHICKEN SMOOTHIE</h2>
+            <div class="post-body">
+              <div class="post-with-img">
+                <div class="post-text">
+                  <p style="text-align: center;">
+                    <p style="text-align: center; filter: grayscale(1); opacity: 0.7;">
+                      <a href="https://www.chickensmoothie.com/pet/492624197.html"><img src="https://www.chickensmoothie.com/pet/492624197&trans=1.jpg" border=0></a>
+                      <a href="https://www.chickensmoothie.com/pet/147112409.html"><img src="https://www.chickensmoothie.com/pet/147112409&trans=1.jpg" border=0></a><br><a href="https://www.chickensmoothie.com/">Adopt virtual pets at Chicken Smoothie!</a></p>
+                </div>
+            </div>
+            <footer class="post-footer">
+              <span>⊹ ࣪ ˖</span>
+              <span class="post-tag">03</span>
+            </footer>
+          </article>
+        </main>
+      </div>
+
+      <!-- FOOTER -->
+      <footer class="site-footer">
+        <span class="footer-left">@WOJENKA</span>
+        <span class="footer-clock" id="clock">00:00:00</span>
+        <span class="footer-right">MADE WITH LOVE</span>
+      </footer>
+
+    </div>
+  </div>
+
+  <script>
+    function updateClock() {
+      const now = new Date();
+      const h = String(now.getHours()).padStart(2, '0');
+      const m = String(now.getMinutes()).padStart(2, '0');
+      const s = String(now.getSeconds()).padStart(2, '0');
+      document.getElementById('clock').textContent = h + ':' + m + ':' + s;
+    }
+    updateClock();
+    setInterval(updateClock, 1000);
+  </script>
+</body>
+</html>

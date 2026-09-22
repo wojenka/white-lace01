@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Name</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  @view-transition {
+    navigation: auto;
+  }
+</style>
+
+</head>
+<body>
+  <div class="page-wrap credits">
+    <div class="site-frame">
+
+      <!-- TOP NAV -->
+      <nav class="top-nav">
+        <a href="index.html" class="nav-btn "><span class="nav-icon">⚜</span> HOME</a>
+        <a href="example-pets.html" class="nav-btn"><span class="nav-icon">⚜</span> PAGE EXAMPLE (PETS)</a>
+        <a href="" class="nav-btn"><span class="nav-icon">⚜</span> LINK</a>
+        <a href="credits.html" class="nav-btn active"><span class="nav-icon">⚜</span> CREDITS</a>
+      </nav>
+
+      <div class="ornament-line"></div>
+
+      <!-- MAIN CONTENT (no side columns on credits) -->
+      <div class="credits-main">
+        <main class="col-center">
+          <article class="box post-box">
+            <h2 class="box-title">GRAPHICS</h2>
+            <div class="post-body">
+              <div class="post-with-img">
+                <div class="post-text">
+                  <p>banner image, profile image: <a href="https://neckdoll.zombie.jp" target="_blank">neckdoll</a></p>
+                  <p>border image and bg on main page: <a href="https://miserabledolly.net" target="_blank">miserabledolly.net</a> edited by me</p>
+                  <p>88x31 buttons: <a href="https://capstasher.neocities.org/88x31collection-page1" target="_blank">capstasher</a></p>
+                  <p>shiny button in profile section: <a href="https://sewerwolfx.neocities.org/graphics/graphicslinks/imvu" target="_blank">sewerwolfx</a></p>
+                </div>
+              </div>
+            </div>
+            <footer class="post-footer">
+              <span>written by <em>wojenka</em></span>
+              <span class="post-tag">id</span>
+            </footer>
+          </article>
+                    <article class="box post-box">
+            <h2 class="box-title">FONTS</h2>
+            <div class="post-body">
+              <div class="post-with-img">
+                <div class="post-text">
+                  <p>banner font: <a href="https://www.dafont.com/ambulance-shotgun.font" target="_blank">ambulance shotgun</a></p>
+                </div>
+              </div>
+            </div>
+            <footer class="post-footer">
+              <span>written by <em>wojenka</em></span>
+              <span class="post-tag">id</span>
+            </footer>
+          </article>
+        </main>
+      </div>
+
+      <!-- FOOTER (same as home) -->
+      <footer class="site-footer">
+        <span class="footer-left">@WOJENKA</span>
+        <span class="footer-clock" id="clock">00:00:00</span>
+        <span class="footer-right">MADE WITH LOVE</span>
+      </footer>
+
+    </div>
+  </div>
+
+  <script>
+    function updateClock() {
+      const now = new Date();
+      const h = String(now.getHours()).padStart(2, '0');
+      const m = String(now.getMinutes()).padStart(2, '0');
+      const s = String(now.getSeconds()).padStart(2, '0');
+      document.getElementById('clock').textContent = h + ':' + m + ':' + s;
+    }
+    updateClock();
+    setInterval(updateClock, 1000);
+</script>
+</body>
+</html>
